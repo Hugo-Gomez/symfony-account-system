@@ -9,6 +9,7 @@ web:
     - php
 php:
   build: .docker/php-fpm
+  working_dir: /symfony
   volumes:
     - ./:/symfony
   links:
