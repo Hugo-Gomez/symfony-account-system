@@ -1,0 +1,16 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+<h1>Transaction creation</h1>
+
+{{ form_start(transactionForm) }}
+    {{ form_widget(transactionForm) }}
+    <input type="submit" value="Create" />
+{{ form_end(transactionForm) }}
+
+<ul>
+    <li>
+        <a href="{{ path('account_index') }}">Back to the list</a>
+    </li>
+</ul>
+{% endblock %}
